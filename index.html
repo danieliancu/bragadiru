@@ -589,6 +589,18 @@ a:hover {
             	$(".menu a").css("display","none");
             });
             
+		
+            $(window).resize(function(){
+                 
+                  if ($(document).width()<992){
+                      $(".menu a").hide();
+                      $(".responsive").show();
+                      $(".responsiveClose").hide();
+                  } else {
+                      $(".menu a").css("display","inline");
+                      $(".responsive, .responsiveClose").hide();
+                  }  
+            });		
             
             $(document).scroll(function(){
                 if($(document).scrollTop()>40){
