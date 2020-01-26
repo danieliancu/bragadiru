@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Bragadiru Real Estate</title>
+    <link rel="stylesheet" href="css/css.css">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    
+    <style>
+    body {
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    transition: .4s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: lightgrey;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+:root {
+    --color: orange;
+    --fontLight: 'Poppins', sans-serif;
+    --fontSerif: 'Lora', serif;
+}
+
+
+/*  banda  */
+
+.banda {
+    position: relative;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    font-weight: 200;
+    z-index: 1;
+}
+
+
+.banda div {
+    position: relative;
+    display: inline-block;
+}
+
+.banda div {
+    width: 49%;
+}
+
+
+
+.banda div a {
+    padding: 5px;
+}
+
+.banda div i {
+    color: var(--color);
+}
+
+
+
+
+
+
+/*  main  */
+
+
+.main {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+}
+
+.main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    top: 20px;
+    color: white;
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+    z-index:1;
+}
+
+.header div {
+    display: inline;
+    width: 50%;
+
+}
+
+.logo {
+    font-size: 38px;
+    font-weight: 600;
+    margin-left: 100px;
+
+}
+
+.menu {
+    float: right;
+    text-align: right;
+    padding-top: 20px;
+    margin-right: 100px;
+}
+
+.menu a {
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.menu a:last-child {
+    background-color: var(--color);
+    border-radius: 10px;
+
+}
+
+.menu a:hover:not(:last-child) {
+    color: var(--color);
+
+}
+
+.responsive, .responsiveClose {
+	position:fixed;
+    top:73px;
+    right:30px;
+    font-size:24px;
+    color:white;
+    display:none;
+    z-index:1;
+}
+
+.responsiveClose {
+	color:red;
+}
+
+
+
+
+/* main - start  */
+
+.start {
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    padding: 100px;
+    height: 400px;
+    text-align: center;
+    color: white;
+}
+
+.start h1 {
+    font-size: 72px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+
+}
+
+.start h5 {
+    font-weight: 300;
+
+}
+
+
+.start form {
+    margin-top: 20px;
+    width: 80%;
+    padding: 40px;
+    background-color: black;
+    border-radius: 20px;
+    opacity: .8;
+}
+
+.start form label {
+    width: 100%;
+    text-align: left;
+    color: var(--color);
+}
+
+.start form select {
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.start form option {
+    color: black;
+}
+
+.start form button {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+}
+
+
+
+
+
+
+/*  oferte  */
+
+
+
+.oferte {
+    position: relative;
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    padding: 100px;
+    text-align: center;
+
+
+}
+
+.oferte h1 {
+    padding-bottom: 50px;
+}
+
+
+.oferta {
+    width: 100%;
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 0px 10px lightgrey;
+    height: auto;
+    padding: 0px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+
+.oferta:hover img {
+    width: 110%;
+    height: 110%;
+}
+
+.oferta .imagine {
+    height: 300px;
+    overflow: hidden;
+}
+
+
+.oferta img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+
+.oferta a {
+    color: black;
+}
+
+.oferta a:hover {
+    color: var(--color);
+}
+
+.info {
+    position: relative;
+    padding: 30px 30px 0px 30px;
+    text-align: left;
+    line-height: 3;
+}
+
+.info h6 {
+    color: grey;
+
+}
+
+
+.pret,
+.tip {
+    background-color: limegreen;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    display: inline;
+}
+
+.tip {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: red;
+}
+
+
+.small {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.more {
+    position: relative;
+    border: 1px solid var(--color);
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--color);
+    top: 50px;
+}
+
+
+
+/* special  */
+
+.special {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 700px;
+    margin-bottom: 100px;
+    color: grey;
+}
+
+.special a {
+    color: var(--color);
+}
+
+.tipSpecial {
+    top: -15px;
+}
+
+.special img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ofertaSpecial {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    background-color: white;
+    top: 150px;
+    left: 300px;
+    border-radius: 10px;
+}
+
+.infoSpecial {
+    line-height: 1.8;
+    padding: 60px;
+}
+
+#afla {
+    float: right;
+    border: 1px solid var(--color);
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: -8px;
+}
+
+#afla:hover {
+    background-color: var(--color);
+    color: white;
+}
+
+
+/* footer */
+.footer {
+    position: relative;
+    padding: 300px 300px 100px 300px;
+}
+
+.footer div div:not(:last-child) {
+    border-right: 1px solid black;
+}
+
+.social {
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid var(--color);
+    border-radius: 100%;
+    margin-top: 20px;
+}
+
+.footer input {
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: lightgrey;
+}
+
+.footer p {
+    color: lightgrey;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:992px) {
+
+    /* banda */
+
+    .banda div:first-child {
+        display: none;
+    }
+
+    .banda div:last-child {
+        width: 100%;
+    }
+
+
+
+    /* main */
+    
+    .main {
+    	height:800px;
+    } 
+
+
+	.header {border-bottom:none;}
+
+    .header .logo {
+        margin-left: 30px;
+        font-size:28px;
+    }
+
+	.responsive {
+    	display:block;
+    }
+
+	.menu {
+	    min-width:100%;
+	    left:0px;
+	    right:0px;
+	    top:40px;
+	    float:none;
+	    position:absolute;
+	    
+	}
+    
+    .menu a {
+        text-align:center;
+        background-color:white;
+        color:black;
+        width:100%;
+        font-size:18px;
+        display:none;
+        
+    }
+    
+    .menu a:last-child {border-radius:0px;}
+    
+
+    .start {
+        width: 100%;
+        padding: 0px;
+        margin: auto;
+    }
+
+    .start h1,
+    .start h5 {
+        display: none;
+    }
+
+    .start form {
+        width: 90%;
+        margin-top: 0px;
+    }
+
+    .start form label {
+        margin-top: 20px;
+    }
+
+    .start form button {
+        margin-top: 20px;
+    }
+
+
+    /*  oferta  */
+
+    .oferte {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+
+
+    /* special */
+    .ofertaSpecial {
+        top: 100px;
+        left: 10px;
+        right: 10px;
+        margin: auto;
+        text-align: center;
+        width: 90%;
+        opacity:.
+    }
+
+    .infoSpecial {
+        padding: 30px 30px 30px 30px;
+
+    }
+
+
+
+    /*footer */
+    .footer {
+        padding: 100px 0px 50px 0px;
+        width: 90%;
+    }
+
+    .footer div div:not(:last-child) {
+        border-right: none;
+    }
+
+    .footer h4 {
+        padding-top: 40px;
+    }
+
+
+}
+
+    </style>
+
+
+
+</head>
+
+<body>
+    <script>
+    	$(document).ready(function(){
+        	$(".responsive, .responsiveClose").click(function(){
+            	$(".responsiveClose, .responsive").toggle();
+                $(".menu a").css("display","block");
+            });
+            
+            $(".responsiveClose").click(function(){
+            	$(".menu a").css("display","none");
+            });
+            
+            
+            $(document).scroll(function(){
+                if($(document).scrollTop()>40){
+	    			$(".header").css({
+    	            	"background-color":"white",
+        	        	"color":"black",
+            	    	"padding-top":"20px",
+                		"position":"fixed",
+                		"top":"0px",
+                		"box-shadow":"0px 0px 10px black"
+                	});
+                	$(".responsive").css({
+                		"color":"black",
+                        "top":"25px"
+                	});
+                    
+                    $(".responsiveClose").css({
+                		"color":"red",
+                        "top":"25px"
+                	});
+                    
+                    $(".menu").css("top","60px");
+                    
+                	$(".menu a").css("color","black");
+                    
+              } else if($(document).scrollTop()<40) {
+              		$(".header").css({
+    	            	"background-color":"transparent",
+        	        	"color":"white",
+            	    	"padding-top":"0px",
+                		"position":"absolute",
+                		"top":"20px",
+                		"box-shadow":"none"
+                	});
+                	$(".responsive").css({
+                		"color":"white",
+                		"top":"73px"
+                	});
+                	$(".responsiveClose").css({
+                		"color":"red",
+                		"top":"73px"
+                	});
+                    
+                    $(".menu").css("top","40px");
+                    
+                    
+                    if($(document).width()>992){
+                		$(".menu a").css("color","white");
+                    } else {
+                		$(".menu a").css("color","black");
+                    }
+              }  
+  			});
+        });
+    </script>
+
+    <div class="banda">
+        <div><span style="color:var(--color);">Nu găsești pe website?</span> Lasă-ne un mesaj cu ce cauți și datele tale de contact</div>
+        <div>
+            <a href=""><i class='far fa-envelope'></i> info@bragadiru.ro</a>
+            <a href=""><i class='fas fa-phone'></i> 012 345 678</a>
+            <a href="https://www.facebook.com"><i class='fab fa-facebook-f'></i></a>
+            <a href="https://www.instagram.com"><i class='fab fa-instagram'></i></a>
+            <a href="https://www.twitter.com"><i class='fab fa-twitter'></i></a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="header">
+            <div class="logo">
+                Bragadiru<span style="color:orange;">Homes</span>
+            </div>
+            <div class="menu">
+                <a href="">Home</a>
+                <a href="">Terenuri</a>
+                <a href="">Case</a>
+                <a href="">Apartamente</a>
+                <a href="">Creditare</a>
+                <a href=""><i class='fas fa-user-alt'></i> Contul tău</a>
+            </div>
+        </div>
+        
+    	<div class="responsiveClose">
+			<i class='fas fa-times'></i>
+        </div>     
+
+        <div class="responsive">
+        	<i class='fas fa-bars'></i>
+        </div>
+   
+        
+        
+        
+        <div class="start">
+            <h1>Soluții complete imobiliare!</h1>
+            <h5>Consultanță imobiliară profesionistă, individuală și dedicată</h5>
+
+            <form class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <label>Locația</label>
+                        <br>
+                        <select>
+                            <option>Nord</option>
+                            <option>Sud</option>
+                            <option>Est</option>
+                            <option>Vest</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <label>Tip</label>
+                        <br>
+                        <select>
+                            <option>Apartament</option>
+                            <option>Vila</option>
+                            <option>Teren</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <label>Preț</label>
+                        <br>
+                        <select>
+                            <option>10.000-20.000 &#8364;</option>
+                            <option>20.000-30.000 &#8364;</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <label>Camere</label>
+                        <br>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <label>Băi</label>
+                        <br>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <button type="submit"><i class='fas fa-search'></i> Căutare</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <img src="https://hottinger.co.uk/wp-content/uploads/2016/07/Hottinger-Home-Background.jpg">
+    </div>
+
+
+    <div class="oferte">
+        <h1>Cele mai noi oferte</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="oferta">
+                        <div class="imagine">
+                            <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/3067325/original/House/photoshop-any-background-onto-your-photo.jpg">
+                        </div>
+                        <div class="tip">Vânzare</div>
+                        <div class="info">
+                            <h5><a href="">Apartament confortabil 6 camere</a></h5>
+                            <h6><i class='fas fa-check'></i> Anunț verificat</h6>
+                            <p class="pret">De la 100.000 &#8364;</p>
+                            <hr>
+                            <p class="small"><i class='fas fa-home'></i> 100 m2</p>
+                            <p class="small"><i class='fas fa-bed'></i> 2 paturi</p>
+                            <p class="small"><i class='fas fa-bath'></i> 2 băi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="oferta">
+                        <div class="imagine">
+                            <img src="https://kgplastering18.co.uk/wp-content/uploads/elementor/thumbs/home-background-image-odxx1y301m24a5m7aj5nmcey2y30xh9r0s3u7oi9wg.jpg">
+                        </div>
+                        <div class="tip" style="background-color:orange;">Închiriere</div>
+                        <div class="info">
+                            <h5><a href="">Apartament confortabil 6 camere</a></h5>
+                            <h6><i class='fas fa-check'></i> Anunț verificat</h6>
+                            <p class="pret">600&#8364;/lună</p>
+                            <hr>
+                            <p class="small"><i class='fas fa-home'></i> 100 m2</p>
+                            <p class="small"><i class='fas fa-bed'></i> 2 paturi</p>
+                            <p class="small"><i class='fas fa-bath'></i> 2 băi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="oferta">
+                        <div class="imagine">
+                            <img src="https://images.wallpaperscraft.com/image/building_house_cottage_style_design_49252_1920x1080.jpg">
+                        </div>
+                        <div class="tip" style="background-color:orange;">Închiriere</div>
+                        <div class="info">
+                            <h5><a href="">Apartament confortabil 6 camere</a></h5>
+                            <h6><i class='fas fa-check'></i> Anunț verificat</h6>
+                            <p class="pret">600&#8364;/lună</p>
+                            <hr>
+                            <p class="small"><i class='fas fa-home'></i> 100 m2</p>
+                            <p class="small"><i class='fas fa-bed'></i> 2 paturi</p>
+                            <p class="small"><i class='fas fa-bath'></i> 2 băi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="oferta">
+                        <div class="imagine">
+                            <img src="https://newdawnvillas.in/wp-content/uploads/2019/02/New-dawn-villas-background-Home-Page-BG-new.jpg">
+                        </div>
+                        <div class="tip">Vânzare</div>
+                        <div class="info">
+                            <h5><a href="">Apartament confortabil 6 camere</a></h5>
+                            <h6><i class='fas fa-check'></i> Anunț verificat</h6>
+                            <p class="pret">De la 100.000 &#8364;</p>
+                            <hr>
+                            <p class="small"><i class='fas fa-home'></i> 100 m2</p>
+                            <p class="small"><i class='fas fa-bed'></i> 2 paturi</p>
+                            <p class="small"><i class='fas fa-bath'></i> 2 băi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="oferta">
+                        <div class="imagine">
+                            <img src="https://images.wallpaperscraft.com/image/house_residential_design_beautifully_13642_1920x1080.jpg">
+                        </div>
+                        <div class="tip">Vânzare</div>
+                        <div class="info">
+                            <h5><a href="">Apartament confortabil 6 camere</a></h5>
+                            <h6><i class='fas fa-check'></i> Anunț verificat</h6>
+                            <p class="pret">De la 100.000 &#8364;</p>
+                            <hr>
+                            <p class="small"><i class='fas fa-home'></i> 100 m2</p>
+                            <p class="small"><i class='fas fa-bed'></i> 2 paturi</p>
+                            <p class="small"><i class='fas fa-bath'></i> 2 băi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="oferta">
+                        <div class="imagine">
+                            <img src="https://images.unsplash.com/photo-1523745663588-1bfa973c9b35?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+                        </div>
+                        <div class="tip">Vânzare</div>
+                        <div class="info">
+                            <h5><a href="">Apartament confortabil 6 camere</a></h5>
+                            <h6><i class='fas fa-check'></i> Anunț verificat</h6>
+                            <p class="pret">De la 100.000 &#8364;</p>
+                            <hr>
+                            <p class="small"><i class='fas fa-home'></i> 100 m2</p>
+                            <p class="small"><i class='fas fa-bed'></i> 2 paturi</p>
+                            <p class="small"><i class='fas fa-bath'></i> 2 băi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="more">Mai multe proprietăți</a>
+        </div>
+    </div>
+
+
+
+    <div class="special">
+        <div class="ofertaSpecial">
+            <div class="tip tipSpecial">Ofertă specială</div>
+
+            <div class="info infoSpecial">
+                <h5><a href="">Apartament confortabil 6 camere</a></h5>
+                <h6><i class='fas fa-check'></i> Anunț verificat</h6>
+                <hr>
+                <p class="small"><i class='fas fa-home'></i> 100 m2</p>
+                <p class="small"><i class='fas fa-bed'></i> 2 paturi</p>
+                <p class="small"><i class='fas fa-bath'></i> 2 băi</p>
+                <p>Ofertă senațională, la un preț imbatabil. Casa este construita cu rost de dilatare ! Nu au perete despartitor comun , fiecare casa este independenta + polistiren intre case! Dispun poze pe tot parcursul constructiei pentru confirmarea materialelor folosite!</p>
+                <p class="pret">De la 100.000 &#8364;</p>
+                <a href="" id="afla">Află detalii</a>
+            </div>
+        </div>
+        <img src="https://images.wallpaperscraft.com/image/interior_design_style_design_home_villa_living_room_68248_1920x1080.jpg">
+    </div>
+
+
+
+    <div class="footer container-fluid">
+        <div class="row">
+            <div class="col-xl-3">
+                <h2 style="font-weight:600;">Bragadiru<span style="color:var(--color);"><span style="letter-spacing:-5px;"> </span>Homes</span></h2>
+                <a href="">office@bgrd.ro</a>
+                <br>
+                <a href="">+021 45787 958</a>
+                <br>
+                <a href="">Șoseaua Chitilei nr. 45</a>
+                <br>
+                <a href="https://www.facebook.com"><i class='fab fa-facebook-f social'></i></a>
+                <a href="https://www.instagram.com"><i class='fab fa-instagram social'></i></a>
+                <a href="https://www.twitter.com"><i class='fab fa-twitter social'></i></a>
+            </div>
+            <div class="col-xl-3">
+                <h4>Servicii</h4>
+                <a href="">Credit</a>
+                <br>
+                <a href="">Prima casă</a>
+                <br>
+                <a href="">Financiar</a>
+                <br>
+                <a href="">Fișă online</a>
+            </div>
+            <div class="col-xl-3">
+                <h4>Utile</h4>
+                <a href="">Despre noi</a>
+                <br>
+                <a href="">Legal</a>
+                <br>
+                <a href="">Contact</a>
+                <br>
+                <a href="">Resurse</a>
+            </div>
+            <div class="col-xl-3">
+                <h4>Newsletter</h4>
+                <input value="Introdu adresa de email">
+                <br>
+                <button class="btn btn-warning">Trimite</button>
+                <br>
+                <p>Aici poți găsi cele mai noi informații și cele mai noi subiecte dspre ultimele evenimente imobiliare.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
