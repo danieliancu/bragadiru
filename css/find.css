@@ -1,0 +1,135 @@
+
+
+
+
+/* .  find area  */
+
+.find {
+	margin:auto;
+    max-width:800px;
+    background-color:lightgrey;
+    margin-top:200px;
+    padding:20px;
+}
+
+
+.rezultate .row {
+	background-color:white;
+    box-shadow:0px 0px 5px grey;
+    height:auto;
+    margin-bottom:20px;
+}
+
+.rezultate .row:last-child {
+	margin-bottom:0px;
+}
+
+.left, .middle, .right {
+	height:300px;
+    padding:0px;
+    object-fit:cover;    
+}
+
+.left {
+	display:block;
+    border:1px solid white;
+    position:relative;
+}
+
+.left img {
+	width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.left .pret {
+    background-color: limegreen;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    position:absolute;
+    bottom:20px;
+    left: 20px;
+}
+
+.left .tip {
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    position:absolute;
+    top:20px;
+    left: 20px;
+}
+
+
+.left .arrow {
+	position:absolute;
+    top:120px;
+	color:white;
+    font-size:42px;
+    opacity:.5;
+}
+
+.left .arrow:hover {
+	color:grey;
+    cursor:pointer;
+}
+
+
+.leftArrow {
+	left:10px;
+}
+
+.rightArrow {
+		right:10px;
+}
+
+.middle img {
+	width:100%;
+    height:100px;
+    object-fit:cover;
+    border:1px solid white;
+}
+
+.right {
+	position:relative;
+	padding:20px;
+    font-size:12px;
+}
+
+.right h6 {
+	color:var(--color);
+}
+
+.right h6:hover {
+	color:grey;
+}
+
+
+.right .allSmall {
+	position:absolute;
+	bottom: 0px;
+    border-top:1px solid lightgrey;
+    width:100%;
+    padding-top:15px;
+    line-height:0;
+}
+
+.right .allSmall i {
+	color:var(--color);
+}
+
+.right .small {
+    display: inline-block;
+    padding-right: 10px;
+
+}
+
+
+@media screen and (max-width:768px) {
+
+	.middle {display:none;}
+    .right {height:auto;}
+
+}
