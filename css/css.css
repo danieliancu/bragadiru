@@ -1,0 +1,568 @@
+    body {
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    transition: .4s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: lightgrey;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+:root {
+    --color: orange;
+    --fontLight: 'Poppins', sans-serif;
+    --fontSerif: 'Lora', serif;
+}
+
+
+/*  banda  */
+
+.banda {
+    position: relative;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    font-weight: 200;
+    z-index: 1;
+}
+
+
+.banda div {
+    position: relative;
+    display: inline-block;
+}
+
+.banda div {
+    width: 49%;
+}
+
+
+
+.banda div a {
+    padding: 5px;
+}
+
+.banda div i {
+    color: var(--color);
+}
+
+
+
+/*  main  */
+
+
+.main {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+}
+
+.main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    color: white;
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+    z-index:1;
+}
+
+.header div {
+    display: inline;
+    width: 50%;
+
+}
+
+.logo {
+    font-size: 38px;
+    font-weight: 600;
+    margin-left: 100px;
+
+}
+
+.menu {
+    float: right;
+    text-align: right;
+    padding-top: 20px;
+    margin-right: 100px;
+}
+
+.menu a {
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.menu a:last-child {
+    background-color: var(--color);
+    border-radius: 10px;
+
+}
+
+.menu a:hover:not(:last-child) {
+    color: var(--color);
+
+}
+
+.responsive, .responsiveClose {
+	position:fixed;
+    top:73px;
+    right:30px;
+    font-size:24px;
+    color:white;
+    display:none;
+    z-index:1;
+}
+
+.responsiveClose {
+	color:red;
+}
+
+.butoane {
+    top:100px;
+    width:100%;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+
+.butoane .more {
+    background-color:transparent;
+    height:50px;
+    padding:10px;
+    
+}
+
+
+
+
+/* main - start  */
+
+.start {
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    padding: 100px;
+    height: 400px;
+    text-align: center;
+    color: white;
+}
+
+
+
+.start h1 {
+    font-size: 72px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+
+}
+
+.start h5 {
+    font-weight: 300;
+
+}
+
+
+.start form {
+    margin-top: 20px;
+    width: 80%;
+    padding: 40px;
+    background-color: black;
+    border-radius: 20px;
+    opacity: .8;
+}
+
+.start form label {
+    width: 100%;
+    text-align: left;
+    color: var(--color);
+}
+
+.start form select, .start form input {
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border:.5px solid white;
+}
+
+.start form option {
+    color: black;
+}
+
+.start form button {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+}
+
+
+
+
+
+
+/*  oferte  */
+
+
+
+.oferte {
+    position: relative;
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    padding: 100px;
+    text-align: center;
+
+
+}
+
+.oferte h1 {
+    padding-bottom: 50px;
+}
+
+
+.oferta {
+    width: 100%;
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 0px 10px lightgrey;
+    height: auto;
+    padding: 0px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+
+.oferta:hover img {
+    width: 110%;
+    height: 110%;
+}
+
+.oferta .imagine {
+    height: 300px;
+    overflow: hidden;
+}
+
+
+.oferta img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+
+.oferta a {
+    color: black;
+}
+
+.oferta a:hover {
+    color: var(--color);
+}
+
+.info {
+    position: relative;
+    padding: 30px 30px 0px 30px;
+    text-align: left;
+    line-height: 3;
+}
+
+.info h6 {
+    color: grey;
+
+}
+
+
+.pret,
+.tip {
+    background-color: limegreen;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    display: inline;
+}
+
+.tip {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: red;
+}
+
+.allSmall {line-height:1;}
+	    
+.small {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.more {
+    position: relative;
+    border: 1px solid var(--color);
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--color);
+    top: 50px;
+}
+
+
+
+/* special  */
+
+.special {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 700px;
+    margin-bottom: 100px;
+    color: grey;
+}
+
+.special a {
+    color: var(--color);
+}
+
+.tipSpecial {
+    top: -15px;
+}
+
+.special img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ofertaSpecial {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    background-color: white;
+    top: 150px;
+    left: 300px;
+    border-radius: 10px;
+}
+
+.infoSpecial {
+    line-height: 1.8;
+    padding: 60px;
+}
+
+#afla {
+    float: right;
+    border: 1px solid var(--color);
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: -8px;
+}
+
+#afla:hover {
+    background-color: var(--color);
+    color: white;
+}
+
+
+/* footer */
+.footer {
+    position: relative;
+    padding: 300px 300px 100px 300px;
+}
+
+.footer div div:not(:last-child) {
+    border-right: 1px solid black;
+}
+
+.social {
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid var(--color);
+    border-radius: 100%;
+    margin-top: 20px;
+}
+
+.footer input {
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: lightgrey;
+}
+
+.footer p {
+    color: lightgrey;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:992px) {
+
+    /* banda */
+
+    .banda div:first-child {
+        display: none;
+    }
+
+    .banda div:last-child {
+        width: 100%;
+    }
+
+
+
+    /* main */
+    
+    .main {
+    	height:800px;
+    } 
+
+
+	.header {border-bottom:none;}
+
+    .header .logo {
+        margin-left: 30px;
+        font-size:28px;
+    }
+
+	.responsive {
+    	display:block;
+    }
+
+	.menu {
+	    min-width:100%;
+	    left:0px;
+	    right:0px;
+	    top:40px;
+	    float:none;
+	    position:absolute;
+	    
+	}
+    
+    .menu a {
+        text-align:center;
+        background-color:white;
+        color:black;
+        width:100%;
+        font-size:18px;
+        display:none;
+        
+    }
+    
+    .menu a:last-child {border-radius:0px;}
+    
+
+    .start {
+        width: 100%;
+        padding: 0px;
+        margin: auto;
+    }
+
+    .start h1,
+    .start h5 {
+        display: none;
+    }
+
+    .start form {
+        width: 90%;
+        margin-top: 0px;
+    }
+
+    .start form label {
+        margin-top: 20px;
+    }
+
+    .start form button {
+        margin-top: 20px;
+    }
+
+
+    /*  oferta  */
+
+    .oferte {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+
+
+    /* special */
+    .ofertaSpecial {
+        top: 100px;
+        left: 10px;
+        right: 10px;
+        margin: auto;
+        text-align: center;
+        width: 90%;
+        opacity:.
+    }
+
+    .infoSpecial {
+        padding: 30px 30px 30px 30px;
+
+    }
+
+
+
+    /*footer */
+    .footer {
+        padding: 100px 0px 50px 0px;
+        width: 90%;
+    }
+
+    .footer div div:not(:last-child) {
+        border-right: none;
+    }
+
+    .footer h4 {
+        padding-top: 40px;
+    }
+
+
+}
